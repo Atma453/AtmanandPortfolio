@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Atmanand | Portfolio</title>
+
+  <!--  Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!--  FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!--  Your CSS -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<!--  NAVBAR -->
+<nav class="navbar navbar-expand-lg nav sticky-top">
+  <div class="container-fluid px-3">
+
+    <a class="brand navbar-brand fw-bold" href="#home">&lt;Atmanand/&gt;</a>
+
+    <!--  Mobile toggle -->
+    <button class="navbar-toggler icon-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav gap-lg-3 text-center">
+
+        <li class="nav-item"><a class="nav-link fw-bold" href="#home">HOME</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold" href="#about">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold" href="#skills">SKILLS</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold" href="#ideas">IDEAS SUBMISSION</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold" href="#projects">PROJECTS</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold" href="#experience">EXPERIENCE</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold" href="#contact">CONTACT</a></li>
+
+      </ul>
+    </div>
+
+    <!--  Theme dots + Dark toggle -->
+    <div class="d-flex align-items-center gap-2">
+      <div class="theme-dots d-none d-lg-flex">
+        <button class="dot purple" onclick="setAccent('purple')" title="Purple"></button>
+        <button class="dot blue" onclick="setAccent('blue')" title="Blue"></button>
+        <button class="dot green" onclick="setAccent('green')" title="Green"></button>
+        <button class="dot red" onclick="setAccent('red')" title="Red"></button>
+      </div>
+
+      <button class="icon-btn" id="themeToggle" title="Toggle Dark/Light">🌙</button>
+    </div>
+
+  </div>
+</nav>
+
+<!--  HERO SECTION -->
+<section class="container py-5" id="home">
+  <div class="row align-items-center g-4">
+
+    <!--  Left Text -->
+    <div class="col-12 col-md-7">
+      <span class="hello-pill">Hello World!</span>
+
+      <h1 class="hero-title">
+        I'm <span class="hero-name">Atmanand B H</span>
+      </h1>
+
+      <p class="hero-sub">
+        Aspiring Engineer passionate about <b>AI</b>, <b>Machine Learning</b> and <b>Web Development</b>.
+      </p>
+
+      <!-- Social row -->
+      <div class="social-row mt-3">
+
+        <a class="social-pill" href="mailto:atmanandbh018@gmail.com">
+          <span class="icon-circle">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+          </span>
+          Email
+        </a>
+
+        <a class="social-pill" href="https://www.linkedin.com/in/atmanand-basavaraj-holeyannavar-6b7014311/" target="_blank">
+          <span class="icon-circle">
+            <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn">
+          </span>
+          LinkedIn
+        </a>
+
+        <a class="social-pill" href="https://github.com/Atma453" target="_blank">
+          <span class="icon-circle">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+          </span>
+          GitHub
+        </a>
+
+        <a class="social-pill" href="tel:9019366383">
+          <span class="icon-circle">
+            <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone">
+          </span>
+          +91-9019366383
+        </a>
+
+      </div>
+
+      <div class="btn-row mt-3">
+        <a class="btn primary" href="#projects">View My Projects</a>
+        <a class="btn outline" href="#about">More About Me</a>
+      </div>
+    </div>
+
+    <!--  Right Photo -->
+    <div class="col-12 col-md-5 text-center">
+      <div class="photo-wrap mx-auto">
+        <img src="profile.jpeg" alt="Atmanand Photo" class="hero-photo">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--  ABOUT -->
+<section class="container section" id="about">
+  <span class="about-pill">About Me</span>
+
+  <h2 class="about-title">Building Smart Solutions with AI and Engineering.</h2>
+
+  <p class="about-desc">
+    I am currently pursuing <b>ECE</b> at <b>Nitte Meenakshi Institute of Technology, Bangalore</b> with a CGPA of
+    <b>8.53</b>. I’m passionate about <b>AI</b>, <b>Machine Learning</b>, and <b>Web Development</b> and I enjoy creating
+    projects that solve real-world challenges.
+  </p>
+
+  <div class="stats-row">
+    <div class="stat-chip"><span class="stat-num">8.53</span><span class="stat-text">CGPA</span></div>
+    <div class="stat-chip"><span class="stat-num">3+</span><span class="stat-text">Projects</span></div>
+    <div class="stat-chip"><span class="stat-num">3</span><span class="stat-text">Certifications</span></div>
+    <div class="stat-chip"><span class="stat-num">AI + Web</span><span class="stat-text">Focus</span></div>
+  </div>
+
+  <!--  Education + Certifications Row -->
+  <div class="row g-4 mt-4">
+    <div class="col-12 col-lg-7">
+      <div class="edu-box">
+        <h4 class="mini-heading">Education</h4>
+
+        <div class="edu-timeline">
+
+          <div class="edu-card2">
+            <div class="edu-left">
+              <div class="edu-bullet"></div>
+              <div class="edu-line"></div>
+            </div>
+            <div class="edu-content">
+              <div class="edu-top2">
+                <div class="edu-text">
+                  <h5>Nitte Meenakshi Institute of Technology</h5>
+                  <p>ECE • Bangalore, Karnataka</p>
+                  <span>July 2023 – Present</span>
+                </div>
+                <div class="tag-score">CGPA: 8.53</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="edu-card2">
+            <div class="edu-left">
+              <div class="edu-bullet"></div>
+              <div class="edu-line"></div>
+            </div>
+            <div class="edu-content">
+              <div class="edu-top2">
+                <div class="edu-text">
+                  <h5>Swami Vivekananda PU College</h5>
+                  <p>12th • Biology • Hulakoti, Gadag</p>
+                  <span>Graduated 2023</span>
+                </div>
+                <div class="tag-score">90.8%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="edu-card2">
+            <div class="edu-left">
+              <div class="edu-bullet"></div>
+              <div class="edu-line hidden-line"></div>
+            </div>
+            <div class="edu-content">
+              <div class="edu-top2">
+                <div class="edu-text">
+                  <h5>Smt Ningamma Hugar School</h5>
+                  <p>Annigeri, Dharwad</p>
+                  <span>Graduated 2021</span>
+                </div>
+                <div class="tag-score">86.08%</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-5">
+      <div class="cert-box">
+        <h4 class="mini-heading">Certifications</h4>
+
+        <div class="cert-list">
+          <div class="cert-card">
+            <div class="cert-icon-box">SW</div>
+            <div>
+              <h5>Build Your Own Static Website</h5>
+              <p>NxtWave • HTML • CSS</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-box">RW</div>
+            <div>
+              <h5>Build Your Own Responsive Website</h5>
+              <p>NxtWave • Responsive Web</p>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon-box">AI</div>
+            <div>
+              <h5>Artificial Intelligence</h5>
+              <p>iStudio • AI Basics</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--  SKILLS -->
+<section class="container section" id="skills">
+  <h2 class="stack-title">My Tech Stack</h2>
+  <div class="stack-line"></div>
+
+  <div class="row g-4">
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="stack-card2">
+        <div class="stack-head2">
+          <div class="head-icon2"><i class="fa-solid fa-code"></i></div>
+          <h3>Languages & Core</h3>
+        </div>
+
+        <div class="stack-body2">
+          <div class="chip chip-yellow"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"><span>Python</span></div>
+          <div class="chip chip-blue"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"><span>C</span></div>
+          <div class="chip chip-yellow"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"><span>Java</span></div>
+          <div class="chip chip-purple"><img src="https://cdn-icons-png.flaticon.com/512/2721/2721291.png"><span>Verilog</span></div>
+          <div class="chip chip-gray"><img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png"><span>DBMS</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="stack-card2">
+        <div class="stack-head2">
+          <div class="head-icon2"><i class="fa-solid fa-globe"></i></div>
+          <h3>Web Technologies</h3>
+        </div>
+
+        <div class="stack-body2">
+          <div class="chip chip-orange"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"><span>HTML</span></div>
+          <div class="chip chip-blue"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"><span>CSS</span></div>
+          <div class="chip chip-purple"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"><span>Bootstrap</span></div>
+          <div class="chip chip-red"><img src="https://streamlit.io/images/brand/streamlit-mark-color.svg"><span>Streamlit</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-4">
+      <div class="stack-card2">
+        <div class="stack-head2">
+          <div class="head-icon2"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+          <h3>Libraries & Tools</h3>
+        </div>
+
+        <div class="stack-body2">
+          <div class="chip chip-blue"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"><span>NumPy</span></div>
+          <div class="chip chip-purple"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"><span>Pandas</span></div>
+          <div class="chip chip-gray"><img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Matplotlib_icon.svg"><span>Matplotlib</span></div>
+          <div class="chip chip-orange"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"><span>Scikit-learn</span></div>
+          <div class="chip chip-blue"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"><span>VS Code</span></div>
+          <div class="chip chip-orange"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"><span>Git</span></div>
+          <div class="chip chip-gray"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg"><span>Jupyter</span></div>
+          <div class="chip chip-blue"><img src="https://cdn-icons-png.flaticon.com/512/300/300221.png"><span>Colab</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--  IDEAS -->
+<section class="container section" id="ideas">
+  <h2 class="sec-title">Ideas Submissions</h2>
+  <div class="sec-line"></div>
+  <div class="row g-4 mt-3">
+    <div class="col-12 col-lg-6">
+      <div class="idea-card">
+        <h3 class="idea-title">Smart India Hackathon 2025</h3>
+        <p class="idea-sub">IoT • Smart Storage • Sensors</p>
+        <p class="idea-desc">
+          Proposed an IoT-based Smart Onion Storage System using temperature, humidity, and gas sensors for spoilage detection.
+        </p>
+        <div class="idea-tags">
+          <span class="tag-pill">C/C++</span>
+          <span class="tag-pill">Python</span>
+          <span class="tag-pill">ESP32</span>
+          <span class="tag-pill">Raspberry Pi</span>
+          <span class="tag-pill">DHT11</span>
+          <span class="tag-pill">MQ-137</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6">
+      <div class="idea-card">
+        <h3 class="idea-title">UIDAI Hackathon 2026</h3>
+        <p class="idea-sub">AI • Demand Intelligence • Analytics</p>
+        <p class="idea-desc">
+          AadhaarPulse AI predicts service pressure zones, detects spikes, and recommends actions using Python analytics.
+        </p>
+        <div class="idea-tags">
+          <span class="tag-pill">Python</span>
+          <span class="tag-pill">Pandas</span>
+          <span class="tag-pill">NumPy</span>
+          <span class="tag-pill">Matplotlib</span>
+          <span class="tag-pill">Colab</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  PROJECTS -->
+<section class="container section" id="projects">
+  <h2 class="center-title">Featured Projects</h2>
+  <div class="center-line"></div>
+
+  <div class="row g-4 mt-2">
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="project-card">
+        <img class="project-img" src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*qc069j40QspA4fgXeSwGWA.jpeg" alt="Face Recognition">
+        <div class="project-body">
+          <h3>Face Recognition using PCA and Neural Networks</h3>
+          <p class="project-tech">PYTHON, PCA, ANN</p>
+          <p class="project-desc">Built face recognition system using PCA (Eigenfaces) for feature extraction and ANN for classification.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="project-card">
+        <img class="project-img" src="https://www.edumilestones.com/career-library/images/travel.png" alt="Tourism Website">
+        <div class="project-body">
+          <h3>Tourism Website (Static Web Project)</h3>
+          <p class="project-tech">HTML, CSS, JS</p>
+          <p class="project-desc">Designed a responsive tourism website with smooth navigation and modern UI.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-4">
+      <div class="project-card">
+        <img class="project-img" src="https://healthsnap.io/wp-content/uploads/2023/09/c8544029-c7ed-4dea-8f12-8be26ca1133f-1200x675.png" alt="Medicine Reminder">
+        <div class="project-body">
+          <h3>AI Voice-Based Medicine Reminder & Monitoring</h3>
+          <p class="project-tech">PYTHON, TTS/STT</p>
+          <p class="project-desc">Built voice reminder system with TTS + STT alerts and response logging for remote monitoring.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--  EXPERIENCE -->
+<section class="container section" id="experience">
+  <h2 class="center-title">Experience</h2>
+  <div class="center-line"></div>
+
+  <div class="row mt-3 justify-content-center">
+    <div class="col-12 col-lg-10">
+      <div class="exp-card">
+        <div class="exp-head">
+          <div>
+            <h3 class="exp-role">Artificial Intelligence Intern</h3>
+            <p class="exp-company">iStudio (Internship Studio)</p>
+          </div>
+          <div class="exp-duration">Aug 2025 – Nov 2025</div>
+        </div>
+
+        <ul class="exp-points">
+          <li>Completed AI internship training and gained hands-on experience.</li>
+          <li>Worked on AI basics, Python implementation, and mini projects.</li>
+          <li>Improved skills in data handling and ML fundamentals.</li>
+        </ul>
+
+        <div class="exp-tools">
+          <span>Python</span>
+          <span>NumPy</span>
+          <span>ML Basics</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  CONTACT -->
+<section class="container section" id="contact">
+  <div class="row g-4 align-items-start">
+
+    <div class="col-12 col-lg-6">
+      <h2 class="contact-title">Let's Chat</h2>
+      <p class="contact-text">
+        Want to collaborate or discuss projects? Reach out anytime.
+      </p>
+
+      <div class="contact-cards">
+        <div class="contact-info-card">
+          <div class="contact-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail">
+          </div>
+          <div>
+            <small>EMAIL</small>
+            <p class="contact-value">
+              <a href="mailto:atmanandbh018@gmail.com">atmanandbh018@gmail.com</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+          </div>
+          <div>
+            <small>LINKEDIN</small>
+            <p class="contact-value">
+              <a target="_blank" href="https://www.linkedin.com/in/atmanand-basavaraj-holeyannavar-6b7014311/">
+                linkedin.com/in/atmanand...
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+          </div>
+          <div>
+            <small>GITHUB</small>
+            <p class="contact-value">
+              <a target="_blank" href="https://github.com/Atma453">github.com/Atma453</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-6">
+      <div class="contact-form-card">
+        <form>
+          <label>Name</label>
+          <input type="text" placeholder="Your Name"/>
+
+          <label>Email</label>
+          <input type="email" placeholder="your.email@example.com"/>
+
+          <label>Message</label>
+          <textarea placeholder="How can we collaborate?"></textarea>
+
+          <button type="submit" class="send-btn">
+            Send Message <span>→</span>
+          </button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--  Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!--  Your JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
